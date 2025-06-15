@@ -1,5 +1,5 @@
 import streamlit as st
-
+from auth import
 def hero():
     st.set_page_config(
         page_title="Finance Sentiment Analysis",
@@ -36,7 +36,8 @@ def hero():
     ) 
         col1, col2, col3 = st.columns([3, 4, 1])
         with col2:
-            st.button("Get Started")
+            if st.button("Get Started"):
+                
 
     st.markdown("---")
 

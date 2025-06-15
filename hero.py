@@ -36,7 +36,10 @@ def hero():
             if 'logged_in' not in st.session_state:
                 st.session_state.logged_in = False
             if st.button("Get Started"):
-                auth_section()
+                if st.session_state.logged_in:
+                    sentiment_dashboard()
+                else:
+                    auth_section()
                 
     st.markdown("---")
 

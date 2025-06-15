@@ -41,4 +41,35 @@ A frontend application for financial sentiment analysis.
     - Open your browser and go to `http://localhost:5000` (or the port specified in your app).
 
 ## Repository Structure
+.
+├── app.py # Main application entry point
+├── auth.py # Authentication logic
+├── dashboard.py # Dashboard functionalities
+├── utils.py # Utility functions
+├── users.db # User database
+├── requirements.txt # Python dependencies
+
+
+## Usage
+
+- Register or log in to your account.
+- Submit financial news or text for sentiment analysis.
+- View results and insights on the dashboard.
+
+## Contributing
+
+Contributions are welcome!  
+Please fork the repository and submit a pull request with your improvements.
+
+## License
+
+This project is currently unlicensed.
+
+## Contact
+
+For questions or support, please open an issue in this repository.
+
+---
+
+*Feel free to update this README as the project evolves!*
 

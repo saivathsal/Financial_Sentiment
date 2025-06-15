@@ -45,7 +45,7 @@ def sentiment_dashboard():
                 response = requests.post(url, json=data)
                 df_new=pd.DataFrame()
                 if response.status_code == 200:
-                    df_new = df_new.concat(response.json())
+                    df_new = df_new.append([response.json()],ignore_index=True)
                 st.session_state.results = pd.concat([df_new, st.session_state.results], ignore_index=True)
 
     results = st.session_state.results

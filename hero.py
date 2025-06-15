@@ -33,6 +33,8 @@ def hero():
     ) 
         col1, col2, col3 = st.columns([3, 4, 1])
         with col2:
+            if 'logged_in' not in st.session_state:
+                st.session_state.logged_in = False
             if st.button("Get Started"):
                 auth_section()
                 

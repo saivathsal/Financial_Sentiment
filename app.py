@@ -1,5 +1,4 @@
 import streamlit as st
-from auth import  auth_section
 from hero import hero
 from dashboard import sentiment_dashboard
 

@@ -14,7 +14,7 @@ def topbar_ui(username):
             unsafe_allow_html=True
         )
     with col2:
-        if st.button("Logout ", key="logout_top"):
+        if st.button("Logout", key="logout_top"):
             st.session_state.logged_in = False
             st.session_state.user = ""
             st.rerun()

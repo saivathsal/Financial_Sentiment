@@ -9,4 +9,4 @@ if __name__ == "__main__":
     if st.session_state.logged_in:
         sentiment_dashboard()
     else:
-        hero()
+        auth_section()

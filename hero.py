@@ -1,11 +1,8 @@
 import streamlit as st
 from auth import auth_section
 def hero():
-    st.set_page_config(
-        page_title="Finance Sentiment Analysis",
-        layout="centered"
-    )
-
+    st.markdown("## Welcome to Finance Sentiment App")
+    
     with st.container():
         st.markdown(
         """

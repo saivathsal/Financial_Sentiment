@@ -1,5 +1,6 @@
 import streamlit as st
 from auth import  auth_section
+from hero import hero
 from dashboard import sentiment_dashboard
 
 if 'logged_in' not in st.session_state:
@@ -9,4 +10,4 @@ if __name__ == "__main__":
     if st.session_state.logged_in:
         sentiment_dashboard()
     else:
-        auth_section()
+        hero()

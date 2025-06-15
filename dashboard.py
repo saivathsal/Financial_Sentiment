@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(page_title="Sentiment Dashboard", layout="wide")
+url=st.secrets["url"]
 
 def topbar_ui(username):
     col1, col2 = st.columns([8, 1])
@@ -39,7 +40,11 @@ def sentiment_dashboard():
             else:
                 st.warning("Provide input text or upload a file.")
             if texts:
+                data={"texts":texts}
+                response = requests.post(url, json=data)
                 df_new=pd.DataFrame()
+                if response.status_code == 200:
+                    df_new = df_new.append(response.json())
                 st.session_state.results = pd.concat([df_new, st.session_state.results], ignore_index=True)
 
     results = st.session_state.results

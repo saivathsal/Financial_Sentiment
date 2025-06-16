@@ -41,14 +41,14 @@ A frontend application for financial sentiment analysis.
     - Open your browser and go to `http://localhost:5000` (or the port specified in your app).
 
 ## Repository Structure
-
+```
 ├── app.py # Main application entry point
 ├── auth.py # Authentication logic
 ├── dashboard.py # Dashboard functionalities
 ├── utils.py # Utility functions
 ├── users.db # User database
 ├── requirements.txt # Python dependencies
-
+```
 
 ## Usage
 

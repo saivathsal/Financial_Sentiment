@@ -70,6 +70,7 @@ This project is currently unlicensed.
 For questions or support, please open an issue in this repository.
 
 ---
+## Live Demo
 
-*Feel free to update this README as the project evolves!*
+[View the deployed app here](https://saivathsal-financial-sentiment-app-mwm24k.streamlit.app/)
 
